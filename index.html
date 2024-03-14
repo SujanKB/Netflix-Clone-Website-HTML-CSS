@@ -1,129 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Speed</title>
-  </head>
-
-  <style>
-    body {
-      background-image: url("https://img.freepik.com/free-vector/realistic-car-headlights-ad-composition-headlights-with-green-purple-illumination_1284-56577.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    h1 {
-      text-align: right;
-      text-decoration: none;
-      color: rgb(90, 83, 83);
-    }
-    h4 {
-      text-align: right;
-      text-decoration: none;
-      color: rgb(90, 83, 83);
-    }
-    h3 {
-      text-align: right;
-      text-decoration: none;
-      color: rgb(90, 83, 83);
-    }
-    .topnav {
-      overflow: hidden;
-      background-color: black;
-    }
-    .topnav a {
-      float: left;
-      color: aliceblue;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: medium;
-    }
-    .topnav a:hover {
-      background-color: rgb(95, 93, 93);
-      color: black;
-    }
-    .topnav a.active {
-      background-color: black;
-    }
-    .topleft {
-      position: absolute;
-      top: 8px;
-      right: 16px;
-      font-size: 10px;
-    }
-    .topnav .search-container {
-      float: right;
-    }
-
-    .topnav input[type="text"] {
-      padding: 6px;
-      margin-top: 8px;
-      font-size: 17px;
-      border: none;
-    }
-
-    .topnav .search-container button {
-      float: right;
-      padding: 6px 10px;
-      margin-top: 8px;
-      margin-right: 16px;
-      background: #000000;
-      color: aliceblue;
-      font-size: 17px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .topnav .search-container button:hover {
-      background: #000000;
-    }
-
-    @media screen and (max-width: 600px) {
-      .topnav .search-container {
-        float: none;
-      }
-      .topnav a,
-      .topnav input[type="text"],
-      .topnav .search-container button {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-        background-color: #000000;
-      }
-      .topnav input[type="text"] {
-        border: 1px solid #000000;
-      }
-    }
-  </style>
-  <body>
-    <div class="topnav">
-      <a href=" ">Home</a>
-      <a href=" ">Menu</a>
-      <a href=" ">About</a>
-      <a href=" ">Contact us</a>
-
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search..." name="search" />
-        </form>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="img/logo.png"class="logo">
+            <div>
+                <button class="language-btn">English<img src="img/down-icon.png"></button>
+                <button>Sign In</button>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email-signup">
+                <input type="email"placeholder="Email address"required>
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
     </div>
+    <div class="feature">
+        <div class="row">
+            <div class="text-col">
+                <h2>Enjoy on your TV.</h2>
+                <p>Watch on smart TVs, PlayStation,Xbox, Chromecast, Apple TV, blu-ray players and more.</p>
+            </div>
+            <div class="img-col">
+                <img src="img/feature-1.png" alt="">
+            </div>
+        </div>
 
-    <h1>WELCOME!</h1>
 
-    <h3>
-      HURRY IN TODAY AND GET $1000 OFF YOUR NEW CAR! FREE TEST DRIVE
-      INCLUDED!...
-    </h3>
-    <h4>
-      Hey! As you’re interested to buy Car, would you like to give it a test
-      drive? <br />Book a test drive and experience for yourself by replying to
-      this text with <br />the dates and times you’re available. See you soon!
-    </h4>
-  </body>
+        <div class="row">
+            <div class="img-col">
+                <img src="img/feature-2.png" alt="">
+            </div>
+            <div class="text-col">
+                <h2>Download your shows to watch offline.</h2>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+           
+        </div>
 
+
+        <div class="row">
+            <div class="text-col">
+                <h2>Watch everywhere.</h2>
+                <p>Stream Unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="img-col">
+                <img src="img/feature-3.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="img-col">
+                <img src="img/feature-4.png" alt="">
+            </div>
+            <div class="text-col">
+                <h2>Create profiles for children.</h2>
+                <p>Send children on adventures with their favourite characters in a space made just for them-free with your membership.</p>
+            </div>
+        </div>
+ </div>
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="accordion">
+         <li>
+            <input type="radio"name="accordion"id="first">
+            <label for="first">What is Netflix?</label>
+              <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              </div>
+         </li>
+
+    <li>
+        <input type="radio"name="accordion"id="second">
+        <label for="second">How much does Netflix cost?</label>
+          <div class="content">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+</li>
+
+<li>
+    <input type="radio"name="accordion"id="third">
+    <label for="third">Where can I watch?</label>
+      <div class="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+</div>
+</li>
+
+<li>
+    <input type="radio"name="accordion"id="fourth">
+    <label for="fourth">How do I cancel?</label>
+      <div class="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+</div>
+</li>
+
+<li>
+    <input type="radio"name="accordion"id="fifth">
+    <label for="fifth">What can I watch on Netflix?</label>
+      <div class="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+</div>
+</li>
+
+<li>
+    <input type="radio"name="accordion"id="sixth">
+    <label for="sixth">Is Netflix good for kids?</label>
+      <div class="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+</div>
+</li>
+    </ul>
+
+    <small>Ready to watch? Enter your email to create or restart your membership.</small>
+    <form class="email-signup">
+        <input type="email"placeholder="Email address"required>
+        <button type="submit">Get Started</button>
+    </form>
+</div>
+<div class="footer">
+    <h2>Questions? call 123-456-7890</h2>
+    <div class="row">
+        <div class="col">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+        </div>
+        <div class="col">
+            <a href="#">Help Center</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookies Preferences</a>
+            <a href="#">Legal Notices</a>
+        </div>
+        <div class="col">
+            <a href="#">Account</a>
+            <a href="#">Ways to watch</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+        <div class="col">
+            <a href="#">Media Centre</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+           
+        </div>
+    </div>
+    <button class="language-btn">English<img src="img/down-icon.png"></button>
+    <div class="copyright-txt">Netflix India</div>
+</div>
+</body>
 </html>
+
